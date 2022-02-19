@@ -76,7 +76,7 @@
           /* justify-content: center; */
           height: 78vh;
           overflow: scroll;
-          scroll-snap-type: y mandatory;
+          scroll-snap-type: y proximity;
           scroll-padding-top: 2vh;
           /* overflow-x: hidden; */
           /* align-items: stretch; */
@@ -106,7 +106,7 @@
           margin-bottom: 5vh;
           /* border: rgba(100, 100, 100, 0.3) solid 1px; */
           border-radius: 0.5vh;
-          scroll-snap-align: start;
+          scroll-snap-align: start end;
           clear: both;
           /* sets up hover state */
           position: relative;
@@ -150,17 +150,25 @@
       }
       
       span {
-          font-size: 12px;
+          font-size: 0.7em;
           font-weight: bold;
           color: #999;
           text-transform: uppercase;
           letter-spacing: .05em;
-          margin: 2em 1.1em 0.5em;
+          margin: 2em 0em 0em 1em;
+
       }
       
       span.r {
           text-align: end;
           margin-right: 1.2em;
+          justify-content: space-between;
+      }     
+
+      span button {
+          /* inherits: none; */
+          margin-bottom: 1.5em;
+          margin-top: 0s;
       }
       
       .thumb {
@@ -246,6 +254,7 @@
       
       .btn-right {
           align-self: flex-end;
+          float: right;
       }
       
       .btn-left {
@@ -270,6 +279,9 @@
           }
           .txt-right {
               display: none;
+          }
+          .container{
+            scroll-snap-type: y mandatory;
           }
       }
       
