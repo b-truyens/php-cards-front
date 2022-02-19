@@ -5,7 +5,7 @@
       body {
           margin: 0;
           font-family: system-ui;
-          font-size: 0.9em;
+          font-size: 1em;
       }
       
       .wrapper {
@@ -308,7 +308,7 @@
               font-size: 1em;
               margin-bottom: 25px;
           }
-          p {
+          .card p {
               font-size: 0.8em;
               margin-bottom: 0px;
               padding-bottom: 0px;
@@ -334,5 +334,8 @@
           }
           .card {
               height: 65vh;
+          }
+          .btn-left {
+              align-items: flex-end;
           }
       }
