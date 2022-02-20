@@ -203,7 +203,7 @@
 let oldWidth = window.innerWidth,
 oldHeight = window.innerHeight;
 // element to adjust
-const target = document.querySelector(".vh100");
+const target = document.querySelector(".container");
 // adjust the size if window was resized
 window.addEventListener("resize", handleResize);
 
@@ -218,7 +218,7 @@ target.classList.add("setting-100vh");
 // save height and apply as min height
 const h = target.clientHeight;
 target.classList.remove("setting-100vh");
-target.style.minHeight = h + "15px";
+target.style.minHeight = h + "px";
 }
 }
 // call when page is loaded
