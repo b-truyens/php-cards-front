@@ -7,10 +7,26 @@ body {
     font-size: 1em;
 }
 
+.vh100 {
+  }
+  
+  
+  /*
+  * Stretch the element to window borders and save the height in JS
+  */
+  
+  .setting-100vh {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    min-height: unset;
+  }
+
 .wrapper {
     /* display: flex; */
     /* flex-direction: column; */
     height: 100vh;
+    min-height: -webkit-fill-available;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -117,7 +133,7 @@ header a.button:hover {
     height: 66vh;
     margin-bottom: 4vh;
     /* border        : rgba(100, 100, 100, 0.3) solid 1px; */
-    scroll-snap-align: start;
+    scroll-snap-align: start end;
     clear: both;
 
     border-top-left-radius: 0.5vh;
