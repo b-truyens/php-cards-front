@@ -228,7 +228,7 @@ nav a {
 
 #currentSet {
     /* background-color: #444; */
-    border-bottom: 2vh solid rgba(0, 0, 0, 0.35);
+    border-bottom: 0.5vh solid rgba(0, 0, 0, 0.35);
     /* border-top: 0.5em solid rgba(0, 0, 0, 0.5); */
 }
 
