@@ -166,10 +166,11 @@ header a.button:hover {
 article {
     padding: 20px;
     flex: 1;
-    display: grid;
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
+
 
 h1 {
     font-size: 20px;
@@ -259,6 +260,38 @@ span button {
 
 .form-check{
     width: 120%;
+}
+
+/* Grids */
+/* -------------------------------------------------- */
+
+.subgrid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.subgrid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.subgrid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.sub-content{   
+    margin: 2vh 2vh auto;
+    background: rgba(0, 0, 0, 0.1);
+    height: 90%;
+    padding: 1vh;
+    grid-column: auto / span 4;
+    grid-row: span 5;
 }
 
 /* NAVI */
