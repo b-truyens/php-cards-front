@@ -207,15 +207,30 @@ span button {
     border-top-left-radius: 0.5vh;
     border-top-right-radius: 0.5vh;
     /* opacity: 0.8; */
+    ;
 }
 
 .form-group.row, .form-check{
     margin-bottom: 1vh;
-    margin-right: 4vh;
+    /* margin-right: 4vh; */
 }
 
 .card .col-sm-2 {
-    padding: 1vh;
+    /* padding: 1vh; */
+}
+
+.form-control{
+    border-radius: 0.5vh;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 1em;
+    padding: 0.5vh;
+    margin-bottom: 0.5vh;
+    margin-top: 1vh;
+    width: 90%;
+
+
 }
 
 /* NAVI */
@@ -333,6 +348,9 @@ nav i {
     .card {
         scroll-snap-align: start;
     }
+    .form-control{
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 45em) {
@@ -353,11 +371,17 @@ nav i {
     .item-XL {
         grid-column: 1 / span 2;
     }
+    .form-control{
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 60em) {
     .band {
         grid-template-columns: repeat(4, 1fr);
+    }
+    .form-control{
+        width: 110%;
     }
 }
 
