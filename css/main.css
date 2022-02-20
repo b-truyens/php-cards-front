@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth !important;
+}
 body {
     margin: 0;
     font-family: system-ui;
@@ -113,7 +116,7 @@ header a.button:hover {
     height: 66vh;
     margin-bottom: 4vh;
     /* border        : rgba(100, 100, 100, 0.3) solid 1px; */
-    scroll-snap-align: start end;
+    scroll-snap-align: start;
     clear: both;
 
     border-top-left-radius: 0.5vh;
