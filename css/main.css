@@ -85,6 +85,7 @@ header a.button:hover {
     /* flex-direction : column; */
     /* align-items    : center; */
     /* justify-content: center; */
+    /* min-height: 76vh; */
     height: 76vh;
     overflow: hidden scroll;
     scroll-snap-type: y proximity;
