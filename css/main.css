@@ -59,7 +59,17 @@
           border-radius: 4px;
           height: auto;
           /* text-align: right; */
-          /* align-items: center; */
+      }
+      
+      header a.button,
+      header a {
+          height: 40%;
+          align-items: center;
+          justify-self: center;
+          justify-content: center;
+          padding: 2vh;
+          text-align: justify;
+          font-size: 2vh;
       }
       
       header a.button:hover {
@@ -102,7 +112,7 @@
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
           display: flex;
           flex-direction: column;
-          height: 70vh;
+          height: 66vh;
           margin-bottom: 5vh;
           /* border: rgba(100, 100, 100, 0.3) solid 1px; */
           border-radius: 0.5vh;
@@ -156,15 +166,14 @@
           text-transform: uppercase;
           letter-spacing: .05em;
           margin: 2em 0em 0em 1em;
-
       }
       
       span.r {
           text-align: end;
           margin-right: 1.2em;
           justify-content: space-between;
-      }     
-
+      }
+      
       span button {
           /* inherits: none; */
           margin-bottom: 1.5em;
@@ -280,8 +289,25 @@
           .txt-right {
               display: none;
           }
-          .container{
-            scroll-snap-type: y mandatory;
+          .container {
+              scroll-snap-type: y proximity;
+          }
+          .card {
+              scroll-snap-align: start;
+          }
+      }
+      
+      @media screen and (min-width: 45em) {
+          .band {
+              grid-template-columns: repeat(3, 1fr);
+          }
+          .card button {
+              font-size: 0.8em;
+          }
+          .card .btn-right,
+          .card .btn-left,
+          .card span {
+              font-size: 0.9em;
           }
       }
       
@@ -342,7 +368,7 @@
               margin-bottom: 0px;
           }
           .card p {
-              display: none;
+              /* display: none; */
           }
           .card {
               height: 65vh;
