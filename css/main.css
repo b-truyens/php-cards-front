@@ -51,7 +51,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: solid 1px;
+    /* border: solid 1px; */
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url(../img/blur-7.jpg);
     background-size: cover;
@@ -87,11 +87,14 @@ header a {
     padding: 2vh;
     text-align: justify;
     font-size: 2vh;
+    position: relative;
+
 }
 
 header a.button:hover {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    top: -5px;
 }
 
 /* CONTENT */
@@ -288,13 +291,9 @@ nav a {
     color: white;
     height: 9vh;
     padding-top: 3vh;
-}
-
-#current {
-    background-color: rgba(0, 0, 0, 0.35);
-    border-bottom: 1vh solid rgba(0, 0, 0, 0.5);
-    /* border-top   : 0.5em solid rgba(0, 0, 0, 0.5); */
-    height: 8vh;
+    position: relative;
+    top: 0;
+    text-decoration-line: unset;
 }
 
 #currentSet {
@@ -304,10 +303,19 @@ nav a {
 }
 
 nav a:hover {
-    border-bottom: 1vh solid rgba(0, 0, 0, 0.35);
-    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 3vh solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     /* bottom       : 1em; */
     height: 8vh;
+    top: 1vh;
+    text-decoration-line: underline;
+}
+
+#current:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-bottom: 1vh solid rgba(0, 0, 0, 0.5);
+    height: 8vh;
+    top: 0;
 }
 
 nav i {
