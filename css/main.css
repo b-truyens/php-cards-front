@@ -27,7 +27,7 @@ body {
     /* display: flex; */
     /* flex-direction: column; */
     height: 100vh;
-    min-height: -webkit-fill-available;
+    /* min-height: -webkit-fill-available; */
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -205,7 +205,7 @@ span.r {
 span button {
     /* inherits: none; */
     margin-bottom: 1.5em;
-    margin-top: 0s;
+    margin-top: 0;
 }
 
 .thumb {
