@@ -268,7 +268,7 @@ span button {
 .subgrid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 .subgrid-3 {
@@ -286,12 +286,12 @@ span button {
 }
 
 .sub-content{   
-    margin: 2vh 2vh auto;
+    margin: 1vh;
     background: rgba(0, 0, 0, 0.1);
     height: 90%;
     padding: 1vh;
-    grid-column: auto / span 4;
-    grid-row: span 5;
+    grid-column: span 1;
+    grid-row: auto;
 }
 
 /* NAVI */
