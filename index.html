@@ -34,7 +34,7 @@ function handleResize(initial = false) { // the parameter is used for calling th
     // save height and apply as min height
     const h = target.clientHeight;
     target.classList.remove("setting-100vh");
-    target.style.minHeight = h + "px";
+    target.style.minHeight = h + "15px";
   }
 }
 // call when page is loaded
@@ -42,7 +42,7 @@ handleResize(true);
 
     </script>
 
-    <div class="wrapper vh100">
+    <div class="wrapper .vh100">
         <header>
             <a href="" onclick="history.back()" class="button">
                 <i class="fa fa-arrow-left"></i> Terug
@@ -138,7 +138,7 @@ handleResize(true);
                                     </div>
                                     <div class="form-group row">
                                       <div class="col-sm-10">
-                                          <label class="form-check-label " for="gridCheck1">
+                                          <!-- <label class="form-check-label " for="gridCheck1"></label> -->
                                         <div class="form-check">
                                           <input class="form-check-input" type="checkbox" id="gridCheck1">
                                           <label class="form-check-label" for="gridCheck1">
@@ -202,6 +202,7 @@ handleResize(true);
                         </a>
                     </div> -->
                 </div>
+            </div>
         </main>
         <nav>
             <a href=" ./index.html " id="current">
