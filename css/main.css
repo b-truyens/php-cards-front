@@ -113,9 +113,13 @@ header a.button:hover {
     height: 66vh;
     margin-bottom: 4vh;
     /* border        : rgba(100, 100, 100, 0.3) solid 1px; */
-    border-radius: 0.5vh;
     scroll-snap-align: start end;
     clear: both;
+
+    border-top-left-radius: 0.5vh;
+    border-top-right-radius: 0.5vh;
+    border-radius: 0.5vh;
+
     /* sets up hover state */
     position: relative;
     top: 0;
@@ -155,6 +159,11 @@ p {
     flex: 1;
     line-height: 1.4;
     margin-left: 0.5em;
+    color: black;
+}
+
+p:hover {
+    color: rgb(59, 17, 107);
 }
 
 span {
@@ -163,7 +172,7 @@ span {
     color: #999;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin: 2em 0em 0em 1em;
+    margin: 1em 0em 0em 1em;
 }
 
 span.r {
@@ -185,6 +194,28 @@ span button {
     height: 100%;
     border-top-left-radius: 0.5vh;
     border-top-right-radius: 0.5vh;
+}
+
+.thumb.form-logn{
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    padding: 2em;
+    margin: 0;
+    /* box-sizing: border-box; */
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 0.5vh;
+    border-top-right-radius: 0.5vh;
+    /* opacity: 0.8; */
+}
+
+.form-group.row, .form-check{
+    margin-bottom: 1vh;
+    margin-right: 4vh;
+}
+
+.card .col-sm-2 {
+    padding: 1vh;
 }
 
 /* NAVI */
