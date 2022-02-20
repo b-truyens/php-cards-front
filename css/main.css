@@ -8,6 +8,7 @@ body {
 }
 
 .vh100 {
+    background-color: rgba(0, 0, 0, 0);
   }
   
   
@@ -235,9 +236,9 @@ span button {
     /* margin-right: 4vh; */
 }
 
-.card .col-sm-2 {
-    /* padding: 1vh; */
-}
+/* .card .col-sm-2 {
+    padding: 1vh;
+} */
 
 .form-control{
     border-radius: 0.5vh;
