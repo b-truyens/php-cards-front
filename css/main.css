@@ -253,6 +253,11 @@ span button {
     background: linear-gradient(220deg, rgb(255, 255, 255), rgb(85, 85, 85) );
     overflow: hidden;
 
+    overflow: hidden;
+    scrollbar-width: 2px;
+    text-decoration: none;
+    color: black;
+
     /* min-height: 80%; */
 }
 
@@ -261,6 +266,14 @@ span button {
     background: linear-gradient(220deg, rgb(255, 255, 255), rgb(85, 85, 85) );
     /* background-size: cover;
     background-position: center center; */
+    overflow: hidden;
+    scrollbar-width: 2px;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 50%;
+
 }
 
 .no-span{
